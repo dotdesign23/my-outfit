@@ -1,0 +1,311 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+header {
+	background-color: #F9E8C9;
+	display: flex;
+	justify-content: space-between;
+	padding: .5rem 15rem;
+	border-bottom: 2px solid #201658;
+}
+
+.logo {
+	height: 2.5rem;
+}
+
+.logo img {
+	height: 100%;
+	width: 100%;
+}
+
+nav {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 2rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #98ABEE;
+	padding: 0.25rem;
+	margin: 0 1rem;
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+nav a.active {
+	color: #201658;
+}
+
+.search_form {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.search_form input {
+	color: #201658;
+	background-color: #F9E8C9;
+	padding: 0.5rem 0.75rem;
+	border-radius: 2.5rem;
+	border: 1px solid #201658;
+}
+
+.search_form button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 1.25rem;
+	color: #201658;
+	background-color: transparent;
+	border: transparent;
+	cursor: pointer;
+}
+
+main {
+	background-color: #F9E8C9;
+	padding: .5rem 15rem;
+}
+
+.heading {
+	color: #201658;
+	font-family: "DM Serif Display", serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.display {
+	color: #201658;
+	font-family: "DM Serif Display", serif;
+	font-size: 3rem;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	margin: 1rem 0;
+	border-left: 2px solid #1D24CA;
+	min-width: 15rem;
+}
+
+.display-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.display-container .display {
+	font-weight: 400;
+}
+
+.display-description {
+	width: 30rem;
+	margin: 0.25rem 0;
+	padding: 0.5rem 1rem;
+	font-family: "Inria Serif", serif;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.display-link {
+	display: inline-block;
+	margin: 0.25rem 0;
+	padding: 0.25rem 0.5rem;
+	color: #1D24CA;
+	border: 1px solid #1D24CA;
+	font-family: "DM Serif Display", serif;
+	font-size: 0.8rem;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.display-link i {
+	font-size: 0.6rem;
+	margin-left: 0.5rem;
+}
+
+.display-container-horizontal {
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.display-container-horizontal .display {
+	margin: 0.25rem 0;
+}
+
+.display-container-horizontal .display-description {
+	width: auto;
+	text-align: left;
+}
+
+.showcase {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.showcase-image {
+	width: 10rem;
+	margin: 0.5rem;
+}
+
+.showcase-image-center {
+	width: 15rem;
+	margin-top: 2rem;
+}
+
+.showcase-image img {
+	width: 100%;
+}
+
+.product1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.product1-box {
+	display: inline-flex;
+	flex-direction: column;
+	width: calc(50% - .5rem);
+	border: 2px solid #000000;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.product1-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-family: "DM Serif Display", serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.product1-detail {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.product1-image {
+	min-width: 10rem;
+	max-width: 10rem;
+}
+
+.product1-image img {
+	width: 100%;
+}
+
+.product1-description {
+	margin: 0;
+	padding: 1rem;
+	font-family: "Inria Serif", serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+footer {
+	background-color: #201658;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 15rem;
+	font-family: "Inria Serif", serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.contact-heading {
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1rem;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-link {
+	margin: .5rem 0;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.contact-link i {
+	width: 1.5rem;
+	text-align: center;
+}
+
+.product2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.product2-box {
+	flex: calc(25% - 1rem);
+}
+
+.product2-nowrap .product2-box {
+	flex: none;
+	width: calc(25% - 1rem);
+}
+
+.product2-image {
+	margin-bottom: 0.5rem;
+}
+
+.product2-image img {
+	width: 100%;
+}
+
+.product2-category,
+.product2-title {
+	margin: 0;
+	padding: 0.25rem;
+	text-align: center;
+}
+
+.product2-title {
+	font-family: "DM Serif Display", serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.product2-title-lg {
+	font-size: 1.4rem;
+}
+
+.product2-category {
+	display: block;
+	font-family: "DM Serif Display", serif;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
